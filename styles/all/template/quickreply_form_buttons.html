@@ -2,9 +2,10 @@
 <div id="qr_action_box" style="display: none;">
 	<div id="qr_action_box_container">
 		<i class="qr_fullscreen_button fa fa-fw fa-arrows-alt" title="{{ lang('QR_FULLSCREEN') }}"></i>
-		{% if (S_SMILIES_ALLOWED and loops.smiley) %}
+		{% if (S_SMILIES_ALLOWED and loops.smiley) or tab_smilies_allowed %}
 		<i class="qr_smiley_button fa fa-fw fa-smile-o" title="{{ lang('SMILIES') }}"></i>
 		{% endif %}
+		
 		{% if S_QR_SHOW_ATTACH_BOX %}
 		<i class="qr_attach_button fa fa-fw fa-paperclip" title="{{ lang('ATTACHMENTS') }}"></i>
 		{% endif %}
