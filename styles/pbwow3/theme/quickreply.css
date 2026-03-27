@@ -1,0 +1,41 @@
+/* pbWoW3 style overrides for QuickReply Reloaded. */
+
+/* Fix smiley-box / message-box layout: pbwow3 extensions.css sets
+   #qr_postform #message-box to width:100%, preventing the smiley panel
+   from floating beside it. Restore the side-by-side layout. */
+#qr_postform #smiley-box {
+	float: right;
+	width: 18%;
+}
+
+#qr_postform #message-box {
+	width: 80%;
+}
+
+/* Pagination button colours for dark theme */
+.pagination_next a.button {
+	background: #2a2a2a;
+	border-color: #555;
+	color: #ccc;
+}
+
+.pagination_next a.button:hover {
+	border-color: #11A3EA;
+}
+
+/* Quick quote button colour */
+.button.qr-quickquote .icon {
+	color: #11A3EA;
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	#qr_postform #smiley-box {
+		float: none;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	#qr_postform #message-box {
+		width: 100%;
+	}
+}
