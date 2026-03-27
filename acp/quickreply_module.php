@@ -125,7 +125,7 @@ class quickreply_module extends acp_module_helper
 			$sql_update_array['qr_form_type'] = (int) $cfg_array['forum_qr_form_type'];
 		}
 
-		if (sizeof($sql_update_array))
+		if (count($sql_update_array))
 		{
 			$sql = 'UPDATE ' . FORUMS_TABLE . '
 					SET ' . $this->db->sql_build_array('UPDATE', $sql_update_array);

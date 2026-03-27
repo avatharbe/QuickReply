@@ -117,7 +117,7 @@ abstract class acp_module_helper
 		}
 
 		// Do not write values if there is an error
-		if (sizeof($this->error))
+		if (count($this->error))
 		{
 			$this->submit = false;
 		}
@@ -230,7 +230,7 @@ abstract class acp_module_helper
 			'L_TITLE'         => $this->user->lang[$this->display_vars['title']],
 			'L_TITLE_EXPLAIN' => $this->user->lang[$this->display_vars['title'] . '_EXPLAIN'],
 
-			'S_ERROR'   => (sizeof($this->error)) ? true : false,
+			'S_ERROR'   => (count($this->error)) ? true : false,
 			'ERROR_MSG' => implode('<br />', $this->error),
 		]);
 	}

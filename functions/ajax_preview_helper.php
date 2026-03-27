@@ -87,7 +87,7 @@ class ajax_preview_helper
 	 */
 	public function preview_attachments($message_parser, $forum_id)
 	{
-		if (sizeof($message_parser->attachment_data))
+		if (count($message_parser->attachment_data))
 		{
 			$update_count = [];
 			$attachment_data = $message_parser->attachment_data;
@@ -163,7 +163,7 @@ class ajax_preview_helper
 			$event['message_parser'] = $message_parser;
 		}
 
-		if (sizeof($error))
+		if (count($error))
 		{
 			ajax_helper::send_json([
 				'status'         => 'preview',

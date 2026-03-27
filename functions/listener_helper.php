@@ -174,7 +174,7 @@ class listener_helper
 	 */
 	public function check_acl_perms($acl_perms)
 	{
-		if (!sizeof($acl_perms))
+		if (!count($acl_perms))
 		{
 			return true;
 		}

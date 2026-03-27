@@ -204,7 +204,7 @@ class ajax_helper
 	 */
 	public function check_form_token(&$error, $post_data)
 	{
-		if (!sizeof($error))
+		if (!count($error))
 		{
 			return false;
 		}
@@ -241,7 +241,7 @@ class ajax_helper
 	 */
 	public function check_errors($error)
 	{
-		if (sizeof($error))
+		if (count($error))
 		{
 			$this->output_errors($error);
 		}
@@ -343,7 +343,7 @@ class ajax_helper
 	 *
 	 * @param array $data Array with JSON data
 	 */
-	static public function send_json($data)
+	public static function send_json($data)
 	{
 		$json_response = new \phpbb\json_response;
 		$json_response->send(array_merge(self::$qr_fields, $data));
