@@ -38,6 +38,7 @@ v2.1.2 (2026-03-27)
 - 2.1.2 (2026-03-27)
   - [CHG] Namespace changed from `boardtools\quickreply` to `avathar\quickreply`
   - [CHG] Updated composer.json for new maintainer
+  - [NEW] Added dutch
 
 ### Installation
 1. [Download the latest release](https://www.avathar.be/forum/app.php/dlext/index?cat=2) and unzip it.
