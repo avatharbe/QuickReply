@@ -1065,3 +1065,11 @@ hr.message-inner-separator {
 #abbc3_buttons {
   color: #000;
 }
+/* Author profile images
+----------------------------------------*/
+.row-authors img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
