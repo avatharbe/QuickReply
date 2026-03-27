@@ -81,8 +81,8 @@ phpbb.closeDarkenWrapper = function(delay) {
  */
 phpbb.alert = function(title, msg) {
 	var $alert = $('#phpbb_alert');
-	$alert.find('.alert_title').html(title);
-	$alert.find('.alert_text').html(msg);
+	$alert.find('.alert_title').text(title);
+	$alert.find('.alert_text').text(msg);
 
 	$(document).on('keydown.phpbb.alert', function(e) {
 		if (e.keyCode === keymap.ENTER || e.keyCode === keymap.ESC) {

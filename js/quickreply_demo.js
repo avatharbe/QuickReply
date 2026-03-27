@@ -87,19 +87,21 @@ quickreply.functions = {
 		if (typeof parameters !== 'object') {
 			return '';
 		}
-		var link = '<a';
-		link += (parameters.href) ? ' href="' + parameters.href + '"' : ' href="#"';
+		var a = document.createElement('a');
+		a.href = (parameters.href) ? parameters.href : '#';
 		if (parameters.id) {
-			link += ' id="' + parameters.id + '"';
+			a.id = parameters.id;
 		}
 		if (parameters.className) {
-			link += ' class="' + parameters.className + '"';
+			a.className = parameters.className;
 		}
 		if (parameters.title) {
-			link += ' title="' + parameters.title + '"';
+			a.title = parameters.title;
 		}
-		link += '>' + ((parameters.text) ? parameters.text : '') + '</a>';
-		return link;
+		if (parameters.text) {
+			a.textContent = parameters.text;
+		}
+		return a.outerHTML;
 	}
 };
 
