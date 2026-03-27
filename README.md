@@ -9,6 +9,7 @@ v2.1.2 (2026-03-27)
 
 #### Support
 - [Support forum](https://www.avathar.be/forum)
+- https://avatharbe.github.io/QuickReply/
 
 #### Requirements
 - phpBB 3.3.0 or higher
