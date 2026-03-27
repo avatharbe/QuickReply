@@ -32,7 +32,7 @@ v2.1.2 (2026-03-27)
 - CAPTCHA support for guests
 
 #### Languages supported
-- Arabic, English, French, German, Hungarian, Polish, Russian, Spanish, Swedish, Turkish
+- Arabic, Dutch, English, French, German, Hungarian, Polish, Russian, Spanish, Swedish, Turkish
 
 ### Changelog
 - 2.1.2 (2026-03-27)

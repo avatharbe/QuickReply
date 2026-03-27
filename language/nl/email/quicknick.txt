@@ -1,0 +1,20 @@
+Subject: Melding van antwoord in onderwerp - "{TOPIC_TITLE}"
+
+Hallo {USERNAME},
+
+Je ontvangt deze melding omdat "{AUTHOR_NAME}" je heeft vermeld in het onderwerp "{TOPIC_TITLE}" op "{SITENAME}". Via de onderstaande link kun je het geplaatste antwoord bekijken.
+
+Als je het bericht wilt bekijken, klik dan op de volgende link:
+{U_VIEW_POST}
+
+Als je het onderwerp wilt bekijken, klik dan op de volgende link:
+{U_TOPIC}
+
+Als je het forum wilt bekijken, klik dan op de volgende link:
+{U_FORUM}
+
+Als je geen meldingen meer wilt ontvangen over antwoorden waarin je wordt vermeld, werk dan hier je meldingsinstellingen bij:
+
+{U_NOTIFICATION_SETTINGS}
+
+{EMAIL_SIG}
