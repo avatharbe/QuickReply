@@ -7,7 +7,7 @@
 *
 */
 
-namespace boardtools\quickreply\migrations\v2xx;
+namespace avathar\quickreply\migrations\v2xx;
 
 //use phpbb\textreparser\manager;
 //use phpbb\textreparser\reparser_interface;
@@ -21,7 +21,7 @@ class v_2_0_0_beta2 extends \phpbb\db\migration\migration
 
 	static public function depends_on()
 	{
-		return ['\boardtools\quickreply\migrations\v2xx\v_2_0_0_beta'];
+		return ['\avathar\quickreply\migrations\v2xx\v_2_0_0_beta'];
 	}
 
 	public function update_data()
@@ -36,11 +36,11 @@ class v_2_0_0_beta2 extends \phpbb\db\migration\migration
 
 	public function update_bbcode_ref()
 	{
-		if (!class_exists('boardtools\quickreply\migrations\v0xx\v_0_1_3'))
+		if (!class_exists('avathar\quickreply\migrations\v0xx\v_0_1_3'))
 		{
-			include($this->phpbb_root_path . 'ext/boardtools/quickreply/migrations/v0xx/v_0_1_3.' . $this->php_ext);
+			include($this->phpbb_root_path . 'ext/avathar/quickreply/migrations/v0xx/v_0_1_3.' . $this->php_ext);
 		}
-		$bbcode_funcs = new \boardtools\quickreply\migrations\v0xx\v_0_1_3($this->config, $this->db, $this->db_tools, $this->phpbb_root_path, $this->php_ext, $this->table_prefix);
+		$bbcode_funcs = new \avathar\quickreply\migrations\v0xx\v_0_1_3($this->config, $this->db, $this->db_tools, $this->phpbb_root_path, $this->php_ext, $this->table_prefix);
 
 		// Load the acp_bbcode class
 		$bbcode_tool = $bbcode_funcs->load_class();

@@ -7,7 +7,7 @@
 *
 */
 
-namespace boardtools\quickreply\migrations\v1xx;
+namespace avathar\quickreply\migrations\v1xx;
 
 class v_1_1_0_alpha extends \phpbb\db\migration\migration
 {
@@ -18,7 +18,7 @@ class v_1_1_0_alpha extends \phpbb\db\migration\migration
 
 	static public function depends_on()
 	{
-		return ['\boardtools\quickreply\migrations\v1xx\v_1_1_0_dev'];
+		return ['\avathar\quickreply\migrations\v1xx\v_1_1_0_dev'];
 	}
 
 	public function update_schema()
@@ -49,16 +49,16 @@ class v_1_1_0_alpha extends \phpbb\db\migration\migration
 
 			// Add ACP modules
 			['module.add', ['acp', 'ACP_QUICKREPLY', [
-					'module_basename'	=> '\boardtools\quickreply\acp\quickreply_qn_module',
+					'module_basename'	=> '\avathar\quickreply\acp\quickreply_qn_module',
 					'module_langname'	=> 'ACP_QUICKREPLY_QN_EXPLAIN',
 					'module_mode'		=> 'config_quickreply_qn',
-					'module_auth'		=> 'ext_boardtools/quickreply && acl_a_quickreply',
+					'module_auth'		=> 'ext_avathar/quickreply && acl_a_quickreply',
 			]]],
 			['module.add', ['acp', 'ACP_QUICKREPLY', [
-					'module_basename'	=> '\boardtools\quickreply\acp\quickreply_plugins_module',
+					'module_basename'	=> '\avathar\quickreply\acp\quickreply_plugins_module',
 					'module_langname'	=> 'ACP_QUICKREPLY_PLUGINS_EXPLAIN',
 					'module_mode'		=> 'config_quickreply_plugins',
-					'module_auth'		=> 'ext_boardtools/quickreply && acl_a_quickreply',
+					'module_auth'		=> 'ext_avathar/quickreply && acl_a_quickreply',
 			]]],
 		];
 	}

@@ -7,7 +7,7 @@
 *
 */
 
-namespace boardtools\quickreply\migrations\v0xx;
+namespace avathar\quickreply\migrations\v0xx;
 
 class v_0_1_1 extends \phpbb\db\migration\migration
 {
@@ -18,7 +18,7 @@ class v_0_1_1 extends \phpbb\db\migration\migration
 
 	static public function depends_on()
 	{
-		return ['\boardtools\quickreply\migrations\v0xx\v_0_1_0'];
+		return ['\avathar\quickreply\migrations\v0xx\v_0_1_0'];
 	}
 
 	public function update_data()

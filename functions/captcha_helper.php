@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\functions;
+namespace avathar\quickreply\functions;
 
 class captcha_helper
 {
@@ -78,7 +78,7 @@ class captcha_helper
 			$json_response = new \phpbb\json_response;
 			$json_response->send([
 				'captcha_refreshed' => true,
-				'captcha_result'    => $this->template->assign_display('@boardtools_quickreply/quickreply_captcha_template.html', '', true),
+				'captcha_result'    => $this->template->assign_display('@avathar_quickreply/quickreply_captcha_template.html', '', true),
 			]);
 		}
 	}

@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\functions;
+namespace avathar\quickreply\functions;
 
 class ajax_helper
 {
@@ -147,7 +147,7 @@ class ajax_helper
 		page_footer(false, false, false);
 		self::send_json([
 			'status' => 'success',
-			'result' => $this->template->assign_display('@boardtools_quickreply/quickreply_template.html', '', true),
+			'result' => $this->template->assign_display('@avathar_quickreply/quickreply_template.html', '', true),
 			'insert' => $this->qr_insert,
 			'merged' => $this->qr_merged,
 		]);

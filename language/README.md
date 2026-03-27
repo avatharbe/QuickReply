@@ -11,4 +11,4 @@
 * Turkish - Edip Dincer
 
 ## Contributing
-If you want to help with translations, send a request to join [the localization project on Transifex](https://www.transifex.com/boardtools/quickreply/).
+If you want to help with translations, send a request to join [the localization project on Transifex](https://www.transifex.com/avathar/quickreply/).

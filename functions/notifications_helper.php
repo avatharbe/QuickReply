@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\functions;
+namespace avathar\quickreply\functions;
 
 class notifications_helper
 {
@@ -35,7 +35,7 @@ class notifications_helper
 		$this->auth = $auth;
 		$this->user = $user;
 		$this->notification_manager = $notification_manager;
-		$this->type_notification = 'boardtools.quickreply.notification.type.quicknick';
+		$this->type_notification = 'avathar.quickreply.notification.type.quicknick';
 	}
 
 	/**

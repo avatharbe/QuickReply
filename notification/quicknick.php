@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\notification;
+namespace avathar\quickreply\notification;
 
 class quicknick extends \phpbb\notification\type\quote
 {
@@ -18,7 +18,7 @@ class quicknick extends \phpbb\notification\type\quote
 	 */
 	public function get_type()
 	{
-		return 'boardtools.quickreply.notification.type.quicknick';
+		return 'avathar.quickreply.notification.type.quicknick';
 	}
 
 	/**
@@ -135,6 +135,6 @@ class quicknick extends \phpbb\notification\type\quote
 	 */
 	public function get_email_template()
 	{
-		return '@boardtools_quickreply/quicknick';
+		return '@avathar_quickreply/quicknick';
 	}
 }

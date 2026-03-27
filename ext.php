@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply;
+namespace avathar\quickreply;
 
 /**
  * Extension class for custom enable/disable/purge actions
@@ -38,7 +38,7 @@ class ext extends \phpbb\extension\base
 		{
 			// Enable/disable/purge notifications
 			$phpbb_notifications = $this->container->get('notification_manager');
-			$phpbb_notifications->$notify_method('boardtools.quickreply.notification.type.quicknick');
+			$phpbb_notifications->$notify_method('avathar.quickreply.notification.type.quicknick');
 			return 'notifications';
 		}
 		else

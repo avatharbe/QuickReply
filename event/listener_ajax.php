@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\event;
+namespace avathar\quickreply\event;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -28,10 +28,10 @@ class listener_ajax implements EventSubscriberInterface
 	/** @var \phpbb\request\request */
 	protected $request;
 
-	/** @var \boardtools\quickreply\functions\ajax_helper */
+	/** @var \avathar\quickreply\functions\ajax_helper */
 	protected $ajax_helper;
 
-	/** @var \boardtools\quickreply\functions\listener_helper */
+	/** @var \avathar\quickreply\functions\listener_helper */
 	protected $helper;
 
 	/** @var bool */
@@ -50,10 +50,10 @@ class listener_ajax implements EventSubscriberInterface
 	 * @param \phpbb\template\template                         $template
 	 * @param \phpbb\user                                      $user
 	 * @param \phpbb\request\request                           $request
-	 * @param \boardtools\quickreply\functions\ajax_helper     $ajax_helper
-	 * @param \boardtools\quickreply\functions\listener_helper $helper
+	 * @param \avathar\quickreply\functions\ajax_helper     $ajax_helper
+	 * @param \avathar\quickreply\functions\listener_helper $helper
 	 */
-	public function __construct(\phpbb\config\config $config, \phpbb\template\template $template, \phpbb\user $user, \phpbb\request\request $request, \boardtools\quickreply\functions\ajax_helper $ajax_helper, \boardtools\quickreply\functions\listener_helper $helper)
+	public function __construct(\phpbb\config\config $config, \phpbb\template\template $template, \phpbb\user $user, \phpbb\request\request $request, \avathar\quickreply\functions\ajax_helper $ajax_helper, \avathar\quickreply\functions\listener_helper $helper)
 	{
 		$this->config = $config;
 		$this->template = $template;

@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\event;
+namespace avathar\quickreply\event;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -22,7 +22,7 @@ class listener_cp implements EventSubscriberInterface
 	/** @var \phpbb\user */
 	protected $user;
 
-	/** @var \boardtools\quickreply\functions\cp_helper */
+	/** @var \avathar\quickreply\functions\cp_helper */
 	protected $cp_helper;
 
 	/**
@@ -30,9 +30,9 @@ class listener_cp implements EventSubscriberInterface
 	 *
 	 * @param \phpbb\template\template                   $template
 	 * @param \phpbb\user                                $user
-	 * @param \boardtools\quickreply\functions\cp_helper $cp_helper
+	 * @param \avathar\quickreply\functions\cp_helper $cp_helper
 	 */
-	public function __construct(\phpbb\template\template $template, \phpbb\user $user, \boardtools\quickreply\functions\cp_helper $cp_helper)
+	public function __construct(\phpbb\template\template $template, \phpbb\user $user, \avathar\quickreply\functions\cp_helper $cp_helper)
 	{
 		$this->template = $template;
 		$this->user = $user;
@@ -73,7 +73,7 @@ class listener_cp implements EventSubscriberInterface
 		$data = array_merge($data, $this->cp_helper->qr_get_user_prefs_data($this->user->data));
 
 		// Output the data vars to the template
-		$this->user->add_lang_ext('boardtools/quickreply', 'quickreply_ucp');
+		$this->user->add_lang_ext('avathar/quickreply', 'quickreply_ucp');
 		$this->template->assign_vars($this->cp_helper->qr_user_prefs_data($data));
 
 		$event['data'] = $data;
@@ -109,7 +109,7 @@ class listener_cp implements EventSubscriberInterface
 	 */
 	public function acp_prefs_template_data($event)
 	{
-		$this->user->add_lang_ext('boardtools/quickreply', 'quickreply_ucp');
+		$this->user->add_lang_ext('avathar/quickreply', 'quickreply_ucp');
 		$data = $event['data'];
 		$user_prefs_data = $event['user_prefs_data'];
 		$user_prefs_data = array_merge($user_prefs_data, $this->cp_helper->qr_user_prefs_data($data));
@@ -135,7 +135,7 @@ class listener_cp implements EventSubscriberInterface
 	 */
 	public function acp_manage_forums_template_data($event)
 	{
-		$this->user->add_lang_ext('boardtools/quickreply', 'info_acp_quickreply');
+		$this->user->add_lang_ext('avathar/quickreply', 'info_acp_quickreply');
 		$template_data = $event['template_data'];
 		$forum_data = $event['forum_data'];
 		$template_data = array_merge($template_data, $this->cp_helper->qr_forums_data($forum_data));

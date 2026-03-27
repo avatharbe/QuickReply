@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\event;
+namespace avathar\quickreply\event;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -31,7 +31,7 @@ class listener implements EventSubscriberInterface
 	/** @var \phpbb\request\request */
 	protected $request;
 
-	/** @var \boardtools\quickreply\functions\listener_helper */
+	/** @var \avathar\quickreply\functions\listener_helper */
 	protected $helper;
 
 	/**
@@ -42,9 +42,9 @@ class listener implements EventSubscriberInterface
 	 * @param \phpbb\template\template                         $template
 	 * @param \phpbb\user                                      $user
 	 * @param \phpbb\request\request                           $request
-	 * @param \boardtools\quickreply\functions\listener_helper $helper
+	 * @param \avathar\quickreply\functions\listener_helper $helper
 	 */
-	public function __construct(\phpbb\auth\auth $auth, \phpbb\config\config $config, \phpbb\template\template $template, \phpbb\user $user, \phpbb\request\request $request, \boardtools\quickreply\functions\listener_helper $helper)
+	public function __construct(\phpbb\auth\auth $auth, \phpbb\config\config $config, \phpbb\template\template $template, \phpbb\user $user, \phpbb\request\request $request, \avathar\quickreply\functions\listener_helper $helper)
 	{
 		$this->auth = $auth;
 		$this->config = $config;
@@ -84,7 +84,7 @@ class listener implements EventSubscriberInterface
 	{
 		$lang_set_ext = $event['lang_set_ext'];
 		$lang_set_ext[] = [
-			'ext_name' => 'boardtools/quickreply',
+			'ext_name' => 'avathar/quickreply',
 			'lang_set' => 'quickreply_notification',
 		];
 		$event['lang_set_ext'] = $lang_set_ext;
@@ -142,7 +142,7 @@ class listener implements EventSubscriberInterface
 		$post_list = $event['post_list'];
 		$topic_id = $topic_data['topic_id'];
 
-		$this->user->add_lang_ext('boardtools/quickreply', 'quickreply');
+		$this->user->add_lang_ext('avathar/quickreply', 'quickreply');
 
 		// Mark post notifications read for this user in this topic
 		$this->helper->notifications_helper->mark_qr_notifications_read($post_list);
@@ -226,7 +226,7 @@ class listener implements EventSubscriberInterface
 		$event['post_data'] = $post_data;
 		$event['page_data'] = $page_data;
 
-		$this->user->add_lang_ext('boardtools/quickreply', 'quickreply');
+		$this->user->add_lang_ext('avathar/quickreply', 'quickreply');
 	}
 
 	/**

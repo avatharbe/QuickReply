@@ -7,7 +7,7 @@
  *
  */
 
-namespace boardtools\quickreply\functions;
+namespace avathar\quickreply\functions;
 
 class cp_helper
 {

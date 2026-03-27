@@ -7,15 +7,15 @@
  *
  */
 
-namespace boardtools\quickreply\acp;
+namespace avathar\quickreply\acp;
 
-use boardtools\quickreply\functions\acp_module_helper;
+use avathar\quickreply\functions\acp_module_helper;
 
 class quickreply_qn_module extends acp_module_helper
 {
 	public function main($id, $mode)
 	{
-		$this->ext_name ='boardtools/quickreply';
+		$this->ext_name ='avathar/quickreply';
 		$this->ext_langname = 'quickreply';
 		$this->tpl_name = 'acp_quickreply';
 		$this->form_key = 'config_quickreply_qn';
