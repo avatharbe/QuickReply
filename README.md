@@ -2,7 +2,7 @@ QuickReply Reloaded for phpBB 3.3
 ==========
 
 Extended possibilities to use the QuickReply feature in phpBB.
-Originally developed by Татьяна5 and LavIgor ([BoardTools](https://github.com/BoardTools/QuickReply)). Now maintained by [Sajaki](https://www.avathar.be).
+Originally developed by Татьяна5 and LavIgor ([BoardTools](https://github.com/BoardTools/QuickReply)). Now maintained by [Avathar.be](https://www.avathar.be).
 
 #### Version
 v2.1.2 (2026-03-27)
@@ -57,4 +57,4 @@ Configure QuickReply by navigating in the ACP to `Extensions -> Quick Reply -> Q
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
 
 © 2014 - 2021 Татьяна5 and LavIgor
-© 2026 - Sajaki (Andy Vandenberghe)
+© 2026 - Avathar.be (Andy Vandenberghe)
