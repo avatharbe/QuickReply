@@ -65,8 +65,8 @@ p {
 
 .container-primary {
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .bg-primary .container-primary {
@@ -103,6 +103,7 @@ p {
 	font-size: 1.1em;
 	margin-left: 60px;
 	margin-right: 15px;
+	margin-bottom: 0;
 }
 
 .row-authors {
