@@ -1,37 +1,46 @@
 {
-    "name": "boardtools/quickreply",
-    "type": "phpbb-extension",
-    "description": "Extended possibilities to use the QuickReply feature.",
-    "homepage": "http://boardtools.github.io/QuickReply/",
-    "version": "2.1.1-beta",
-    "license": "GPL-2.0-only",
-    "authors": [
-        {
-            "name": "Татьяна5",
-            "homepage": "http://phpbbguru.net",
-            "role": "Developer"
-        },
-        {
-            "name": "Igor Lavrov",
-            "homepage": "https://github.com/lavigor",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": ">=7.1.3"
+  "name": "avathar/quickreply",
+  "type": "phpbb-extension",
+  "description": "Extended possibilities to use the QuickReply feature.",
+  "homepage": "https://github.com/avatharbe/QuickReply",
+  "version": "2.1.2",
+  "time": "2026-03-27",
+  "license": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "Татьяна5",
+      "homepage": "http://phpbbguru.net",
+      "role": "Previous developer"
     },
-    "require-dev": {
-        "phpbb/epv": "dev-master"
+    {
+      "name": "Igor Lavrov",
+      "homepage": "https://github.com/lavigor",
+      "role": "Previous developer"
     },
-    "extra": {
-        "display-name": "QuickReply Reloaded",
-        "soft-require": {
-           "phpbb/phpbb": "3.3.*"
-        },
-        "version-check": {
-            "host": "boardtools.github.io",
-            "directory": "/QuickReply",
-            "filename": "version.json"
-        }
+    {
+      "name": "Sajaki",
+      "email": "sajaki@avathar.be",
+      "homepage": "https://www.avathar.be",
+      "role": "developer"
     }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "phpbb/phpbb": ">=3.3.0",
+    "composer/installers": "~1.0 || ~2.0"
+  },
+  "require-dev": {
+    "phpbb/epv": "dev-master"
+  },
+  "extra": {
+    "display-name": "QuickReply Reloaded",
+    "soft-require": {
+      "phpbb/phpbb": ">=3.3.0"
+    },
+    "version-check": {
+      "host": "www.avathar.be",
+      "directory": "/versioncheck",
+      "filename": "quickreply.json"
+    }
+  }
 }

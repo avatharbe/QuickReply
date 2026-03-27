@@ -1,39 +1,60 @@
-QuickReply Reloaded
-===================
-Extended possibilities to use the QuickReply feature.
+QuickReply Reloaded for phpBB 3.3
+==========
 
-[![Build Status](https://travis-ci.org/BoardTools/QuickReply.svg?branch=master)](https://travis-ci.org/BoardTools/QuickReply)
+Extended possibilities to use the QuickReply feature in phpBB.
+Originally developed by Татьяна5 and LavIgor ([BoardTools](https://github.com/BoardTools/QuickReply)). Now maintained by [Sajaki](https://www.avathar.be).
 
-## General overview and features
-You can find general description of extension's features as well as a demo, up-to-date download links and the list of supported versions on extension's webpage:
-### http://boardtools.github.io/QuickReply/
+#### Version
+v2.1.2 (2026-03-27)
 
-## Quick Installation
-You can quickly install this extension on the latest version of [phpBB 3.1](https://www.phpbb.com/downloads/) or on the latest development version of [phpBB 3.1-dev](https://github.com/phpbb/phpbb3) by doing the following:
+#### Support
+- [Support forum](https://www.avathar.be/forum)
 
-1. Upload the extension with "[Upload Extensions](https://github.com/BoardTools/upload)".
-2. Check that you have uploaded the correct files.
-3. Click `Enable`.
+#### Requirements
+- phpBB 3.3.0 or higher
+- PHP 7.1 or higher
 
-## Standard Installation
-You can install this extension on the latest version of [phpBB 3.1](https://www.phpbb.com/downloads/) or on the latest development version of [phpBB 3.1-dev](https://github.com/phpbb/phpbb3) by doing the following:
+#### Features
+- Full-featured quick reply form on the viewtopic page
+- AJAX-powered posting (submit without page reload)
+- Quick quote: select text in a post and insert it as a quote with one click
+- Quick nick: click a username to insert @mention in the reply
+- Configurable form type: standard, fixed at bottom, or popup
+- Attachment support via plupload
+- BBCode buttons, smilies panel, and subject field in quick reply
+- Preview posts before submitting
+- Compatibility with Posts Merging extension (rxu/PostsMerging)
+- Transliteration support (Cyrillic to Latin)
+- Per-forum enable/disable in ACP Forum Management
+- ACP settings module with plugin system
+- UCP user preferences for quick reply behavior
+- Notification type for @mention (quick nick)
+- CAPTCHA support for guests
 
-1. [Download the latest release of the extension](https://github.com/BoardTools/QuickReply).
-2. Check out the existence of the folder `/ext/boardtools/quickreply/` in the root of your board folder. Create folders if necessary.
-3. Copy the contents of the downloaded `quickreply-master` folder to `/ext/boardtools/quickreply/`. If you've done it correctly, you'll have the extension's `composer.json` file at `(your board's root)/ext/boardtools/quickreply/composer.json`.
-4. Navigate in the ACP to `Customise -> Extension Management -> Manage extensions -> QuickReply Reloaded`.
-5. Click `Enable`.
+#### Languages supported
+- Arabic, English, French, German, Hungarian, Polish, Russian, Spanish, Swedish, Turkish
 
-## Configuration
-You can configure QuickReply by navigating in the ACP to `Extensions` -> `Quick Reply` -> `Quick Reply Settings`.
+### Changelog
+- 2.1.2 (2026-03-27)
+  - [CHG] Namespace changed from `boardtools\quickreply` to `avathar\quickreply`
+  - [CHG] Updated composer.json for new maintainer
 
-## Uninstallation
+### Installation
+1. [Download the latest release](https://www.avathar.be/forum/app.php/dlext/index?cat=2) and unzip it.
+2. Copy the entire contents from the unzipped folder to `/ext/avathar/quickreply/`.
+3. Navigate in the ACP to `Customise -> Manage extensions`.
+4. Find `QuickReply Reloaded` under "Disabled Extensions" and click `Enable`.
 
-1. Navigate in the ACP to `Customise -> Extension Management -> Manage extensions`.
-2. Look for `QuickReply Reloaded` under the `Enabled Extensions` list, and click its `Disable` link.
-3. For permanent uninstallation click `Delete Data` and then delete the `/ext/boardtools/quickreply` folder.
+### Configuration
+Configure QuickReply by navigating in the ACP to `Extensions -> Quick Reply -> Quick Reply Settings`.
 
-## License
+### Uninstallation
+1. Navigate in the ACP to `Customise -> Manage extensions`.
+2. Click the `Disable` link for `QuickReply Reloaded`.
+3. To permanently uninstall, click `Delete Data`, then delete the `quickreply` folder from `/ext/avathar/`.
+
+### License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
 
 © 2014 - 2021 Татьяна5 and LavIgor
+© 2026 - Sajaki (Andy Vandenberghe)
